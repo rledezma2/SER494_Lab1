@@ -148,3 +148,8 @@ Thumbs.db
 *.pidb
 *.booproj
 
+# Ignore heavy texture imports
+Assets/ALP_Assets/Realistic Terrain Textures Lite/Textures/
+Assets/ALP_Assets/Realistic Terrain Textures Lite/Scenes/TerrainDATA/
+
+
