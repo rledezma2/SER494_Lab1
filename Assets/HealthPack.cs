@@ -7,7 +7,7 @@ public class HealthPack : MonoBehaviour
         Health player = other.GetComponent<Health>();
         if (player != null)
         {
-            player.Heal(1);
+            player.Heal(0);
             Destroy(gameObject);
         }
     }

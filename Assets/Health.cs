@@ -20,7 +20,7 @@ public class Health : MonoBehaviour
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
-        currentHealth = Mathf.Max(currentHealth, 0);
+        // currentHealth = Mathf.Max(currentHealth, 0);
         healthBar.SetHealth(currentHealth);
 
         Debug.Log($"Player took {amount} damage. Health: {currentHealth}/{maxHealth}");
@@ -34,7 +34,7 @@ public class Health : MonoBehaviour
     public void Heal(int amount)
     {
         currentHealth += amount;
-        currentHealth = Mathf.Min(currentHealth, maxHealth);
+        // currentHealth = Mathf.Min(currentHealth, maxHealth);
         healthBar.SetHealth(currentHealth);
 
         Debug.Log($"Player healed {amount}. Health: {currentHealth}/{maxHealth}");
